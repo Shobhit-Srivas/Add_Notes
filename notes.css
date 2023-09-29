@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.mydiv {
+  height: 50px;
+  width: 100%;
+  background-color: rgb(27, 25, 25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mysearch {
+  height: 50px;
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+input[type="text"] {
+  height: 30px;
+  width: 80%;
+  outline: none;
+  border: 3px solid greenyellow;
+}
+
+::placeholder {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.outer {
+  height: 40px;
+  width: 52%;
+  border: 1px solid silver;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.outer h1 {
+  margin-left: 1rem;
+  font-size: 3rem;
+  font-family: sans-serif;
+}
+
+.notes {
+  min-height: 150px;
+  width: 52%;
+  margin: auto;
+  margin-top: 1rem;
+  border: 1px solid silver;
+}
+
+.notes p {
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: 1rem;
+}
+
+.notes textarea {
+  height: 80px;
+  width: 95%;
+  margin-left: 2rem;
+  outline: none;
+  border: 1px solid silver;
+}
+
+.notes button {
+  height: 30px;
+  width: 100px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  margin: 1rem;
+  background-color: rgb(67, 183, 228);
+}
+
+.mynotes {
+  height: 40px;
+  width: 52%;
+  border: 1px solid silver;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.mynotes h1 {
+  font-size: 3rem;
+  margin-left: 1rem;
+}
+
+.mydiv2 {
+  min-height: 200px;
+  width: 20%;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 3rem 3.75rem;
+}
+
+.mydiv3 {
+  height: 30px;
+  width: 100%;
+}
+
+.mydiv3 p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.mydiv4 {
+  min-height: 100px;
+  width: 100%;
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.mydiv5 button {
+  height: 40px;
+  width: 30%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+  margin-left: 1rem;
+  background-color: rgb(67, 183, 228);
+}
+/* ################################# media query code ########################### */
+
+@media (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+
+  .outer,
+  .notes,
+  .mynotes {
+    width: auto;
+  }
+
+  .mydiv2 {
+    width: 40%;
+    margin: 3rem 4.25rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .mydiv2 {
+    width: 60%;
+    margin: 3rem 10rem;
+  }
+}
+
+@media (max-width: 280px) {
+  ::placeholder {
+    font-size: 1rem;
+  }
+
+  .outer h1 {
+    font-size: 2.25rem;
+  }
+
+  .mydiv2 {
+    display: block;
+    margin: 3rem 6rem;
+  }
+
+  .mydiv5 button {
+    width: 50%;
+  }
+}
